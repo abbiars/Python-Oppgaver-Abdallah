@@ -1,9 +1,26 @@
 # Dette programmet ber brukeren om å skrive inn to tall,
-# legger dem sammen, og viser resultatet.
-a = input("Skriv inn et tall: ")
-b = input("Skriv inn et annet tall: ")
-# Plusser tallene sammen (Bruker float istedenfor int sånn at det funker med desimaltall også)
-sum = float(a) + float(b)
+test=True
+while test:
+    try:
+        a = int(input("Skriv inn et tall1: "))
+        test= False
+    except:
+        print("Du må skrive inn et tall!")
+b = int(input("Skriv inn et annet tall2: "))
+c = (input("Skriv inn operasjonen: (+, -, *, /, **) "))
+
+
+if c == "+":
+    sum = float(a) + float(b)
+elif c== "-":
+    sum = float(a) - float(b)
+elif c== "*":
+    sum = float(a) * float(b)
+elif c== "/":
+    sum = float(a) / float(b)
+elif c== "**":
+    sum = float(a) ** float(b)
+
 
 # Viser summen av tallene
-print("Summen av tallene er:", sum)
+print("Resultat av", a, c, b, "=", sum)
