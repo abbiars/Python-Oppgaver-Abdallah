@@ -9,7 +9,7 @@ while test:
 b = int(input("Skriv inn et annet tall2: "))
 c = (input("Skriv inn operasjonen: (+, -, *, /, **) "))
 
-
+# alle operasjonene
 if c == "+":
     sum = float(a) + float(b)
 elif c== "-":
