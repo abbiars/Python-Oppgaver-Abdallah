@@ -34,5 +34,5 @@ else:  # Ugyldig operator
     print(f"Ugyldig operator: '{c}'")
     exit()
 
-# Skriver ut det endelige resultatet
+# Skriver ut resultatet
 print(f"Resultat av {a} {c} {b} = {resultat}")
